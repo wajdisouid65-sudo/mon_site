@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050b18;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #08152b;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #008cff;
+}
+
+header h2 {
+    color: #00aaff;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #07142b, #003b70);
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: #b8dfff;
+}
+
+.btn {
+    display: inline-block;
+    background: #009dff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0066cc;
+    transform: scale(1.05);
+}
+
+section:not(.hero) {
+    padding: 40px 8%;
+}
+
+section h2 {
+    color: #00aaff;
+    margin-bottom: 25px;
+}
+
+.games {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #0b1930;
+    border: 1px solid #0077cc;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1 1 180px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00ccff;
+    box-shadow: 0 0 15px #0077cc55;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #00aaff;
+}
+
+.card p {
+    color: #c4d8ef;
+}
+
+#apropos p,
+#contact p {
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #08152b;
+    border-top: 1px solid #0077cc;
+    color: #9ccfff;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+}
+.games {
+    display: flex;
+    flex-direction: row;     
+    justify-content: center;  
+    gap: 20px;               
+    flex-wrap: nowrap;        
+}
+
+.card {
+    flex: 1;              
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;           
+    height: 200px;
+    object-fit: cover;        
+    border-radius: 10px;
+}

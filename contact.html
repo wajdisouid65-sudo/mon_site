@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Wajdi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>WELCOM TO MY CONTACT<span>.</span></h2>
+
+        <nav>
+            <a href="acceuil.html">Accueil</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="accueil">
+            <p class="subtitle">RESTONS EN CONTACT</p>
+            <h1>Contactez-<span>moi</span></h1>
+            <p class="description">
+                Une question ou une idée ?
+                Envoyez-moi un message !
+            </p>
+        </section>
+
+        <section class="contact-box" id="contact">
+            <h2>Envoyer un message</h2>
+            <p class="info">
+                Remplissez le formulaire ci-dessous.
+            </p>
+
+            <form action="https://formsubmit.co/wajdisouid65@gmail.com" method="POST">
+
+                <label for="nom">Nom complet</label>
+                <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Votre nom"
+                    required
+                >
+
+                <label for="email">Adresse Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="votre Email"
+                    required
+                >
+
+                <label for="message">Votre message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Écrivez votre message..."
+                    required
+                ></textarea>
+
+                <button type="submit">Envoyer le message ↗</button>
+                
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Wajdi. Tous droits réservés.</p>
+    </footer>
+
+
+</body>
+</html>

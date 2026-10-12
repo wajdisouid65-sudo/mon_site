@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #090711;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #100d1c;
+    border-bottom: 1px solid #302044;
+}
+
+header h2 {
+    color: white;
+    font-size: 27px;
+}
+
+header h2 span,
+.hero h1 span {
+    color: #a855f7;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #ddd6e8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+.hero {
+    text-align: center;
+    padding: 65px 20px 35px;
+}
+
+.subtitle {
+    color: #c084fc;
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #b9b2c8;
+    line-height: 1.7;
+}
+
+.contact-box {
+    width: 90%;
+    max-width: 550px;
+    margin: 10px auto 55px;
+    padding: 30px;
+    background: #131020;
+    border: 1px solid #493064;
+    border-radius: 16px;
+    box-shadow: 0 0 30px #7c3aed18;
+}
+
+.contact-box h2 {
+    color: #c084fc;
+    margin-bottom: 10px;
+}
+
+.info {
+    color: #aaa2bb;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    color: #e9ddff;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    background: #0b0913;
+    border: 1px solid #38264c;
+    border-radius: 8px;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 8px #a855f733;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 12px;
+    padding: 15px;
+    background: #9333ea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7e22ce;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    border-top: 1px solid #302044;
+    color: #9389a5;
+    font-size: 13px;
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .contact-box {
+        padding: 22px;
+    }
+}
